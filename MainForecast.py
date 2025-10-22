@@ -1,6 +1,6 @@
 
 import requests #Agar bisa terhubung ke API
-from fAPI_KEY import vAPI_KEY #Mengambil kunci api
+vAPI_KEY="Place your Meteosource apin key here" #Mengambil kunci api
 import sys #Untuk keluar jika eror 
 
 def MintaData(kota):
@@ -99,4 +99,5 @@ def main():
     else:
         sys.exit(1)
 if __name__ == "__main__":
+
     main()
