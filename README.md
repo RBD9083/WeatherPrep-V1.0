@@ -41,7 +41,7 @@ Kota salah ejaan/gak ada di data API -> memberi pesan, ulangi program
 
 # Pseudo-code:
 IMPOR API_KEY,request,dll
-FUNCTION MintaData(kota):
+FUNGSI MintaData(kota):
     buat URL API menggunakan kota dan API_KEY
     coba kirim request HTTP GET
         jika gagal koneksi -> tampilkan "Periksa internet" dan panggil main()
@@ -50,20 +50,20 @@ FUNCTION MintaData(kota):
     jika 402/429 -> tampilkan kuota habis, keluar
     jika 400 -> tampilkan kota tidak valid, kembali ke main()
 
-FUNCTION GarisBesarCuaca3jam(Data):
+FUNGSI GarisBesarCuaca3jam(Data):
     ambil 3 data pertama dari 'hourly'
     jika ada 'thunderstorm' -> kembalikan BADAI
     jika ada 'rain' -> kembalikan HUJAN
     jika ada 'cloudy' atau 'overcast' -> kembalikan BERAWAN
     selain itu -> CERAH
 
-FUNCTION MembuatRekomendasi(cuaca):
+FUNGSI MembuatRekomendasi(cuaca):
     jika BADAI -> tampilkan rekomendasi darurat
     jika HUJAN -> tampilkan rekomendasi hujan
     jika BERAWAN -> rekomendasi antisipasi
     jika CERAH -> rekomendasi cuaca panas
 
-FUNCTION main():
+FUNGSI main():
     minta input kota dari user
     panggil MintaData dengan parameter kota
     panggil GarisBesarCuaca3jam dengan parameter data
@@ -80,8 +80,6 @@ END
 
 # Versi & Pengembang
 -WeatherPrep v1.0
--Pengembang:RBD9083 at Github
+-Pengembang:Rafael Bentara D. atau Username: RBD9083 at Github
 -Lisensi:MIT License
 
-# Link Repository di GitHub
--
